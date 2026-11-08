@@ -1,0 +1,21 @@
+# Python deps (excluding PyTorch).
+# PyTorch lives at a non-PyPI AMD ROCm index — see README Step 2.
+
+transformers==4.57.1
+datasets==4.4.1
+evaluate==0.4.6
+accelerate==1.11.0
+sentencepiece==0.2.1          # required by XLM-RoBERTa tokenizer
+
+scikit-learn==1.9.0
+pandas==3.0.3
+matplotlib==3.11.2
+
+pyyaml==6.0.3
+tqdm==4.70.1
+
+# Notebook — only needed for notebooks/analysis.ipynb
+jupyter==1.1.1
+ipykernel==7.4.0
+nbformat==5.10.4
+nbconvert==7.16.6

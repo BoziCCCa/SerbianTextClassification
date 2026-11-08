@@ -1,0 +1,75 @@
+{
+  "baseline": {
+    "name": "tfidf+logreg",
+    "test_accuracy": 0.6589595375722543,
+    "test_f1_macro": 0.6307128768667231
+  },
+  "models": {
+    "xlmr": {
+      "model_name": "xlm-roberta-base",
+      "best_lr": 2e-05,
+      "n_params": 278045955,
+      "train_time_s_mean": 108.64247143333584,
+      "test_accuracy": {
+        "mean": 0.8053949903660886,
+        "std": 0.007273443579258867
+      },
+      "test_f1_macro": {
+        "mean": 0.7850581396722917,
+        "std": 0.007734075196809329
+      },
+      "per_seed": [
+        {
+          "seed": 42,
+          "test_accuracy": 0.8063583815028902,
+          "test_f1_macro": 0.7813136590566058
+        },
+        {
+          "seed": 123,
+          "test_accuracy": 0.8121387283236994,
+          "test_f1_macro": 0.7939517806836243
+        },
+        {
+          "seed": 2024,
+          "test_accuracy": 0.7976878612716763,
+          "test_f1_macro": 0.7799089792766448
+        }
+      ]
+    },
+    "bertic": {
+      "model_name": "classla/bcms-bertic",
+      "best_lr": 2e-05,
+      "n_params": 110619651,
+      "train_time_s_mean": 64.68356610001258,
+      "test_accuracy": {
+        "mean": 0.8323699421965318,
+        "std": 0.012597973825262114
+      },
+      "test_f1_macro": {
+        "mean": 0.8137040927831218,
+        "std": 0.01312931414412556
+      },
+      "per_seed": [
+        {
+          "seed": 42,
+          "test_accuracy": 0.8236994219653179,
+          "test_f1_macro": 0.802918028426848
+        },
+        {
+          "seed": 123,
+          "test_accuracy": 0.8265895953757225,
+          "test_f1_macro": 0.8098708309234626
+        },
+        {
+          "seed": 2024,
+          "test_accuracy": 0.846820809248555,
+          "test_f1_macro": 0.828323418999055
+        }
+      ]
+    }
+  },
+  "best_lrs": {
+    "xlmr": 2e-05,
+    "bertic": 2e-05
+  }
+}

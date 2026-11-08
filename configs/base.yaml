@@ -1,0 +1,37 @@
+#Shared defaults. Per-model files override. Load order: base <- model <- CLI.
+
+num_labels: 3
+
+#Data
+train_csv: data/processed/train.csv
+val_csv:   data/processed/val.csv
+test_csv:  data/processed/test.csv
+
+#128 covers >99% of comments for both tokenizers (see dataset_summary.json).
+max_length: 128
+
+#Optimisation
+learning_rate: 3.0e-5
+num_train_epochs: 5
+per_device_train_batch_size: 16
+per_device_eval_batch_size: 32
+gradient_accumulation_steps: 1
+weight_decay: 0.01
+warmup_ratio: 0.1
+label_smoothing_factor: 0.0
+
+#Early stopping / checkpointing
+eval_strategy: epoch
+save_strategy: epoch
+metric_for_best_model: eval_f1_macro
+greater_is_better: true
+load_best_model_at_end: true
+save_total_limit: 1
+early_stopping_patience: 2
+
+#RDNA 4 supports bf16.
+bf16: true
+fp16: false
+
+seed: 42
+output_root: runs

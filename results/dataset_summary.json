@@ -1,0 +1,123 @@
+{
+  "random_seed": 50,
+  "val_fraction": 0.1,
+  "test_fraction": 0.1,
+  "label_map": {
+    "negative": 0,
+    "neutral": 1,
+    "positive": 2
+  },
+  "splits": {
+    "train": {
+      "n_examples": 2768,
+      "class_counts": {
+        "negative": 818,
+        "neutral": 484,
+        "positive": 1466
+      },
+      "char_len": {
+        "mean": 108.11091040462428,
+        "median": 90.0,
+        "p95": 254.0,
+        "max": 375
+      },
+      "cyrillic_rows": 22,
+      "token_lens": {
+        "xlm-roberta-base": {
+          "mean": 32.78106936416185,
+          "median": 28.0,
+          "p95": 74.0,
+          "p99": 86.0,
+          "max": 125,
+          "n_over_128": 0,
+          "n_over_256": 0,
+          "n_over_512": 0
+        },
+        "bcms-bertic": {
+          "mean": 30.81972543352601,
+          "median": 27.0,
+          "p95": 67.0,
+          "p99": 81.32999999999993,
+          "max": 148,
+          "n_over_128": 2,
+          "n_over_256": 0,
+          "n_over_512": 0
+        }
+      }
+    },
+    "val": {
+      "n_examples": 346,
+      "class_counts": {
+        "negative": 102,
+        "neutral": 61,
+        "positive": 183
+      },
+      "char_len": {
+        "mean": 111.50578034682081,
+        "median": 93.5,
+        "p95": 265.75,
+        "max": 328
+      },
+      "cyrillic_rows": 3,
+      "token_lens": {
+        "xlm-roberta-base": {
+          "mean": 33.67341040462428,
+          "median": 29.0,
+          "p95": 75.75,
+          "p99": 87.0,
+          "max": 93,
+          "n_over_128": 0,
+          "n_over_256": 0,
+          "n_over_512": 0
+        },
+        "bcms-bertic": {
+          "mean": 31.67630057803468,
+          "median": 26.0,
+          "p95": 67.0,
+          "p99": 83.10000000000002,
+          "max": 114,
+          "n_over_128": 0,
+          "n_over_256": 0,
+          "n_over_512": 0
+        }
+      }
+    },
+    "test": {
+      "n_examples": 346,
+      "class_counts": {
+        "negative": 102,
+        "neutral": 61,
+        "positive": 183
+      },
+      "char_len": {
+        "mean": 110.6820809248555,
+        "median": 90.0,
+        "p95": 259.75,
+        "max": 339
+      },
+      "cyrillic_rows": 1,
+      "token_lens": {
+        "xlm-roberta-base": {
+          "mean": 33.664739884393065,
+          "median": 28.0,
+          "p95": 76.75,
+          "p99": 87.55000000000001,
+          "max": 95,
+          "n_over_128": 0,
+          "n_over_256": 0,
+          "n_over_512": 0
+        },
+        "bcms-bertic": {
+          "mean": 31.49421965317919,
+          "median": 27.0,
+          "p95": 69.75,
+          "p99": 79.55000000000001,
+          "max": 91,
+          "n_over_128": 0,
+          "n_over_256": 0,
+          "n_over_512": 0
+        }
+      }
+    }
+  }
+}

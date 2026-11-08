@@ -1,0 +1,4 @@
+#BERTić: ELECTRA pretrained on Bosnian/Croatian/Montenegrin/Serbian.
+#110M params — much smaller than XLM-R; expect faster steps.
+model_name: classla/bcms-bertic
+run_tag: bertic
