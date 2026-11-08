@@ -1,0 +1,48 @@
+# Local env (installed with --prefix because C: is tight)
+.conda/
+.pip-cache/
+.tmp/
+
+# HuggingFace model cache (gigabytes of weights, re-downloadable)
+hf_cache/
+.cache/
+
+# Training outputs: metrics belong in results/, checkpoints do not
+runs/
+runs_*/
+checkpoints/
+outputs/
+
+# Python bytecode and build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+build/
+dist/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDE and OS cruft
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Test/coverage leftovers (in case anything shows up)
+.pytest_cache/
+.coverage
+htmlcov/
